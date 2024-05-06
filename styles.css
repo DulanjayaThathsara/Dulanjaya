@@ -1,0 +1,1482 @@
+@import url("https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@600;800&family=Poppins:wght@400;500;600;700&display=swap");
+/* .home-page-start */
+:root {
+  --primary-color: #0a0d14;
+  --primary-color-light: #20242f;
+  --secondary-color: #f49e09;
+  --extra-light: rgba(255, 255, 255, 0.5);
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Lisu Bosa", serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__header {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: var(--header-font);
+  text-align: center;
+}
+
+.section__subheader {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+header {
+  background-image: linear-gradient(to top, var(--primary-color), transparent),
+    url("https://img.freepik.com/free-photo/person-taking-part-sustainable-travel-movement_23-2151049578.jpg?t=st=1714629797~exp=1714633397~hmac=0f1f529472cbbd35340b97012afa64fa38f0558cb903f9563bdaa973f0c12ae6&w=900");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid var(--extra-light);
+}
+
+.nav__bar {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.nav__logo a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link a {
+  padding: 1.5rem 5px;
+  font-weight: 500;
+  color: var(--white);
+  transition: 0.3s;
+}
+
+.link a:hover {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.link span {
+  padding: 1rem 0;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.header__container {
+  padding: 12rem 1rem;
+}
+
+.header__container h1 {
+  margin-bottom: 1rem;
+  max-width: 700px;
+  font-size: 4rem;
+  font-family: var(--header-font);
+}
+
+.header__container h4 {
+  position: relative;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.header__container h4::after {
+  position: absolute;
+  content: "";
+  left: -3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 2rem;
+  background-color: var(--white);
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.about__container :is(.section__header, .section__subheader) {
+  text-align: left;
+}
+
+.about__flex {
+  margin: 2rem 0;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: var(--primary-color-light);
+}
+
+.about__card {
+  flex: 1 1 150px;
+  text-align: center;
+  border-right: 2px solid var(--primary-color);
+}
+
+.about__card:last-child {
+  border: none;
+}
+
+.about__card h4 {
+  margin-bottom: 5px;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: var(--header-font);
+}
+
+.about__card p {
+  font-size: 0.9rem;
+}
+
+.about__image img {
+  max-width: 450px;
+  margin: auto;
+}
+
+.discover {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.05),
+    transparent
+  );
+}
+
+.discover__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.discover__card {
+  max-width: 320px;
+  margin: auto;
+}
+
+.discover__card:nth-child(2) {
+  transform: translateY(5rem);
+}
+
+.discover__image {
+  position: relative;
+}
+
+.discover__image::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to top, var(--primary-color), transparent);
+}
+
+.discover__card__content {
+  padding: 0 2rem;
+  transform: translateY(-50%);
+}
+
+.discover__card__content h4 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: var(--header-font);
+  color: var(--secondary-color);
+}
+
+.discover__card__content p {
+  margin-bottom: 2rem;
+}
+
+.discover__btn {
+  padding: 0.75rem 1rem;
+  outline: none;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: transparent;
+  border: 1px solid var(--white);
+  cursor: pointer;
+}
+
+.blogs__container {
+  padding: 5rem 0;
+}
+
+.blogs__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.blogs__card {
+  position: relative;
+}
+
+.blogs__card::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(to top, var(--primary-color), transparent);
+}
+
+.blogs__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.journals__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.journals__content {
+  padding: 2rem;
+  background-color: var(--primary-color-light);
+}
+
+.journals__author {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.journals__author img {
+  max-width: 30px;
+  border-radius: 100%;
+}
+
+.journals__author p {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.journals__content h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.journals__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.journals__footer p {
+  font-size: 0.9rem;
+  opacity: 0.5;
+}
+
+.journals__footer span a {
+  font-size: 1.5rem;
+  color: var(--white);
+  opacity: 0.75;
+}
+
+.journals__btn {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.hero__container p {
+  text-align: center;
+  font-size: 12rem;
+  font-weight: 700;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/427/774/456/images-of-tokyo-japan-anime-city-tokyo-tokyo-japan-city-wallpaper-preview.jpg");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--extra-light);
+}
+
+.gallery__container {
+  padding: 5rem 1rem;
+}
+
+.gallery__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.gallery__card {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery__content {
+  position: absolute;
+  left: 50%;
+  bottom: -8rem;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 2rem 1rem;
+  transition: 0.3s;
+  text-align: center;
+  background-image: linear-gradient(to top, var(--primary-color), transparent);
+}
+
+.gallery__content h4 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: var(--header-font);
+}
+
+.gallery__card:hover .gallery__content {
+  bottom: 0;
+}
+
+.contact {
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.05),
+    transparent
+  );
+}
+
+.contact__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+  text-decoration: none;
+}
+
+.contact__card {
+  max-width: 250px;
+  margin: auto;
+  aspect-ratio: 1;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  border: 1px solid var(--extra-light);
+  border-radius: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contact__card span {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.contact__card:hover span {
+  color: var(--secondary-color);
+}
+
+.contact__col h4 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-family: var(--header-font);
+  text-decoration: none;
+}
+
+.contact__col h5 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--header-font);
+  text-decoration: none;
+}
+
+.footer__container {
+  text-align: center;
+}
+
+.footer__container h4 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.footer__socials {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer__socials span a {
+  font-size: 1.5rem;
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer__socials span a:hover {
+  color: var(--secondary-color);
+}
+
+.footer__container p {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+.footer__nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer__link a {
+  font-weight: 500;
+  color: var(--white);
+}
+
+.footer__link a:hover {
+  color: var(--secondary-color);
+}
+
+.footer__bar {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  border-top: 1px solid var(--extra-light);
+}
+
+@media (width < 900px) {
+  .link:not(.search) {
+    display: none;
+  }
+
+  .about__container {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+
+  .about__container :is(.section__header, .section__subheader) {
+    text-align: center;
+  }
+
+  .about__image {
+    grid-area: 1/1/2/2;
+  }
+
+  .discover__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blogs__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .journals__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .hero__container p {
+    font-size: 10rem;
+  }
+
+  .gallery__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact__col:first-child {
+    grid-area: 1/1/2/3;
+    text-align: center;
+  }
+}
+
+@media (width < 600px) {
+  .header__container {
+    text-align: center;
+  }
+
+  .header__container h4 {
+    margin-left: 0;
+  }
+
+  .about__card {
+    border: none;
+  }
+
+  .discover__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .discover__card:nth-child(2) {
+    transform: translateY(0);
+  }
+
+  .blogs__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .journals__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hero__container p {
+    font-size: 6rem;
+  }
+
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact__col:first-child {
+    grid-area: unset;
+  }
+}
+
+/* .home-page-end */
+
+/* .second-page-start */
+
+.second-page {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0)),
+  url("https://wallpapers.com/images/hd/hiking-woman-enjoying-life-528qhanbkh37yhfv.jpg");
+  background-size: cover;
+}
+
+.header01 {
+  margin-top: -250px;
+  margin-left: 550px;
+}
+
+.banner01 {
+  width: 100%;
+  height: 100vh;
+  margin-top: 135px;
+  background-color: rgb(125, 125, 125);
+}
+
+.prgrp01 {
+  margin-top: 20px;
+}
+
+.box01 {
+  width: 50%;
+  height: 40vh;
+  margin-top: -250px;
+  margin-left: 500px;
+  background-color: #b59e77;
+}
+
+.box02 {
+  width: 30%;
+  height: 70vh;
+  margin-top: -460px;
+  margin-left: 600px;
+  background-color: #ffffff;
+}
+
+.box03 {
+  width: 30%;
+  height: 70vh;
+  margin-top: -480px;
+  margin-left: 280px;
+  background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/49530109c42152d2b527faee/ttt-min.jpg");
+  background-size: cover;
+}
+
+.header02 h2 {
+  margin-left: 680px;
+  margin-top: -300px;
+  color: rgb(125, 125, 125);
+}
+
+.prgrp02 p {
+  color: rgb(125, 125, 125);
+  margin-left: 680px;
+  margin-top: 20px;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  margin-top: -450px;
+  margin-left: 150px;
+  background-color: #ffffff;
+}
+
+.ftt {
+  width: 100%;
+  height: 80vh;
+  margin-top: 358px;
+  background-image: url("https://cdn.statically.io/img/timelinecovers.pro/facebook-cover/download/mountain-peak-hiking-facebook-cover.jpg");
+  background-size: cover;
+}
+
+.header03 {
+  margin-top: -800px;
+  margin-left: 100px;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.prgrp03 p {
+  margin-left: 200px;
+}
+
+/* .second-page-end */
+
+/* .about-us-page-start */
+
+.read {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0)),
+  url("https://www.outincanberra.com.au/wp-content/uploads/2019/08/best-mountain-hikes-canberra.jpg");
+  background-size: cover;
+}
+
+.header04 {
+  margin-top: -250px;
+  margin-left: 550px;
+}
+
+.prgrp04 p {
+  margin-left: 300px;
+  margin-top: 20px;
+}
+
+.third-page {
+  width: 100%;
+  height: 80vh;
+  margin-top: 159px;
+}
+
+.about-img {
+  width: 80%;
+  height: 80vh;
+  margin-left: 100px;
+  background-image: url("about.jpg");
+  background-size: cover;
+}
+
+/* .about-us-page-end */
+
+/* .Norway-start */
+
+.norway {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0)),
+  url("https://c4.wallpaperflare.com/wallpaper/744/341/313/lofoten-norway-mountains-cityscape-wallpaper-preview.jpg");
+  background-size: cover;
+}
+
+.header05 {
+  margin-top: -250px;
+  margin-left: 550px;
+}
+
+.five-page {
+  margin-top: 250px;
+  margin-left: 500px;
+}
+
+.card {
+  width: 100%;
+  height: 150vh;
+}
+
+.card01 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 50px;
+  margin-top: 50px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card02 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 350px;
+  margin-top: -355px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card03 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 650px;
+  margin-top: -355px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card04{
+  width: 20%;
+  height: 60vh;
+  margin-left: 950px;
+  margin-top: -355px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card05 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 950px;
+  margin-top: 80px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card06 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 650px;
+  margin-top: -355px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card07 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 350px;
+  margin-top: -355px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card08 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 50px;
+  margin-top: -355px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card09 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 83px;
+  margin-top: -300px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2020/04/11/14/42/street-5030692_1280.jpg");
+  background-size: cover;
+}
+
+.card10 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 383px;
+  margin-top: -149px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2021/03/04/07/31/mountains-6067150_1280.jpg");
+  background-size: cover;
+}
+
+.card11 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 683px;
+  margin-top: -149px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2023/12/05/08/23/port-8431044_1280.jpg");
+  background-size: cover;
+}
+
+.card12 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 983px;
+  margin-top: -149px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2021/01/05/19/55/winter-5892335_1280.jpg");
+  background-size: cover;
+}
+
+.card13 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 983px;
+  margin-top: -579px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2021/08/27/18/50/water-6579313_1280.jpg");
+  background-size: cover;
+}
+
+.card14 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 683px;
+  margin-top: -149px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2023/07/05/18/13/mountains-8108961_1280.jpg");
+  background-size: cover;
+}
+
+.card15{
+  width: 15%;
+  height: 25vh;
+  margin-left: 383px;
+  margin-top: -149px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2024/01/05/14/00/ship-8489583_1280.jpg");
+  background-size: cover;
+}
+
+.card16 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 83px;
+  margin-top: -149px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2024/02/24/10/31/norway-8593725_1280.jpg");
+  background-size: cover;
+}
+
+.card-text01 {
+  color: #0a0d14;
+  margin-left: 80px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.card-text02 {
+  color: #0a0d14;
+  margin-left: 373px;
+  margin-top: -20px;
+  font-size: 15px;
+}
+
+.card-text03 {
+  color: #0a0d14;
+  margin-left: 675px;
+  margin-top: -30px;
+  font-size: 15px;
+}
+
+.card-text04 {
+  color: #0a0d14;
+  margin-left: 1000px;
+  margin-top: -30px;
+  font-size: 15px;
+}
+
+.card-text05 {
+  color: #0a0d14;
+  margin-left: 80px;
+  margin-top: 420px;
+  font-size: 15px;
+}
+
+.card-text06 {
+  color: #0a0d14;
+  margin-left: 400px;
+  margin-top: -28px;
+  font-size: 15px;
+}
+
+.card-text07 {
+  color: #0a0d14;
+  margin-left: 675px;
+  margin-top: -28px;
+  font-size: 15px;
+}
+
+.card-text08 {
+  color: #0a0d14;
+  margin-left: 1006px;
+  margin-top: -28px;
+  font-size: 15px;
+}
+
+/* .Norway-end */
+
+/* .London-stat */
+
+.london {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0)),
+  url("https://i.pinimg.com/originals/13/ba/16/13ba168b5fbad9bbd334d61caad95e9c.jpg");
+  background-size: cover;
+}
+
+.header06 {
+  margin-top: -250px;
+  margin-left: 550px;
+}
+
+.six-page {
+  margin-top: 250px;
+  margin-left: 450px;
+}
+.forth-page {
+  width: 100%;
+  height: 150vh;
+}
+
+.card17 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 50px;
+  margin-top: 50px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card18 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 350px;
+  margin-top: -355px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card19 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 650px;
+  margin-top: -355px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card20 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 950px;
+  margin-top: -355px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card21 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 950px;
+  margin-top: 80px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card22 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 650px;
+  margin-top: -355px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card23 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 350px;
+  margin-top: -355px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card24 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 50px;
+  margin-top: -355px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card25 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 83px;
+  margin-top: -300px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2018/11/04/16/28/london-3794348_1280.jpg");
+  background-size: cover;
+}
+
+.card26 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 383px;
+  margin-top: -149px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2020/11/20/16/10/tower-bridge-5762070_1280.jpg");
+  background-size: cover;
+}
+
+.card27 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 683px;
+  margin-top: -149px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2020/02/09/22/56/london-4834823_1280.jpg");
+  background-size: cover;
+}
+
+.card12 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 983px;
+  margin-top: -149px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2020/01/29/18/01/train-station-4803180_1280.jpg");
+  background-size: cover;
+}
+
+.card28 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 983px;
+  margin-top: -579px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2018/01/12/11/55/london-3078109_1280.jpg");
+  background-size: cover;
+}
+
+.card29 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 683px;
+  margin-top: -149px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2016/08/05/15/02/london-1572444_1280.jpg");
+  background-size: cover;
+}
+
+.card30 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 383px;
+  margin-top: -149px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2019/08/09/21/52/london-4395917_1280.jpg");
+  background-size: cover;
+}
+
+.card31 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 83px;
+  margin-top: -149px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2014/11/22/08/37/thames-541456_1280.jpg");
+  background-size: cover;
+}
+
+.card32 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 983px;
+  margin-top: 285px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2022/02/15/13/00/building-7014904_1280.jpg");
+  background-size: cover;
+}
+
+.card-text33 {
+  color: #0a0d14;
+  margin-left: 105px;
+  margin-top: -410px;
+  font-size: 15px;
+}
+
+.card-text34 {
+  color: #0a0d14;
+  margin-left: 390px;
+  margin-top: -25px;
+  font-size: 15px;
+}
+
+.card-text35 {
+  color: #0a0d14;
+  margin-left: 710px;
+  margin-top: -25px;
+  font-size: 15px;
+}
+
+.card-text36 {
+  color: #0a0d14;
+  margin-left: 1005px;
+  margin-top: -25px;
+  font-size: 15px;
+}
+
+.card-text37 {
+  color: #0a0d14;
+  margin-left: 100px;
+  margin-top: 410px;
+  font-size: 15px;
+}
+
+.card-text38 {
+  color: #0a0d14;
+  margin-left: 400px;
+  margin-top: -30px;
+  font-size: 15px;
+}
+
+.card-text39 {
+  color: #0a0d14;
+  margin-left: 710px;
+  margin-top: -30px;
+  font-size: 15px;
+}
+
+.card-text40 {
+  color: #0a0d14;
+  margin-left: 990px;
+  margin-top: -30px;
+  font-size: 15px;
+}
+/* .London-end */
+
+/* .japan-start */
+
+.japan {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0)),
+  url("https://img.freepik.com/free-photo/people-walking-japan-street-nighttime_23-2148942945.jpg");
+  background-size: cover;
+}
+
+.header07 {
+  margin-top: -250px;
+  margin-left: 550px;
+}
+
+.seven-page {
+  margin-top: 250px;
+  margin-left: 450px;
+}
+
+.fifth-page {
+  width: 100%;
+  height: 150vh;
+}
+
+.card47 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 50px;
+  margin-top: 50px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card33 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 350px;
+  margin-top: -355px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card34 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 650px;
+  margin-top: -355px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card35 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 950px;
+  margin-top: -355px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card36 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 950px;
+  margin-top: 80px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card37 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 650px;
+  margin-top: -355px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card38 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 350px;
+  margin-top: -355px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card39 {
+  width: 20%;
+  height: 60vh;
+  margin-left: 50px;
+  margin-top: -355px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.card00 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 83px;
+  margin-top: -300px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2022/04/04/02/52/cherry-blossoms-7110279_1280.jpg");
+  background-size: cover;
+}
+
+.card001 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 383px;
+  margin-top: -149px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2022/09/07/10/01/landscape-7438429_1280.jpg");
+  background-size: cover;
+}
+
+.card002 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 683px;
+  margin-top: -149px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2020/11/24/11/24/sika-deer-5772242_1280.jpg");
+  background-size: cover;
+}
+
+.card003 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 983px;
+  margin-top: -149px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2020/11/24/10/37/city-5772121_1280.jpg");
+  background-size: cover;
+}
+
+.card004 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 983px;
+  margin-top: -579px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2020/09/03/18/12/the-akashi-kaikyo-bridge-5542079_1280.jpg");
+  background-size: cover;
+}
+
+.card005 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 683px;
+  margin-top: -149px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2020/04/09/14/32/japan-5021733_1280.jpg");
+  background-size: cover;
+}
+
+.card006 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 383px;
+  margin-top: -149px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2023/03/22/04/26/pagoda-7868621_1280.jpg");
+  background-size: cover;
+}
+
+.card007 {
+  width: 15%;
+  height: 25vh;
+  margin-left: 83px;
+  margin-top: -149px;
+  border-radius: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2021/02/13/13/02/red-lighthouse-6011477_1280.jpg");
+  background-size: cover;
+}
+
+.card-text001 {
+  color: #0a0d14;
+  margin-left: 110px;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.card-text002 {
+  color: #0a0d14;
+  margin-left: 400px;
+  margin-top: -25px;
+  font-size: 15px;
+}
+
+.card-text003 {
+  color: #0a0d14;
+  margin-left: 700px;
+  margin-top: -25px;
+  font-size: 15px;
+}
+
+.card-text004 {
+  color: #0a0d14;
+  margin-left: 980px;
+  margin-top: -25px;
+  font-size: 15px;
+}
+
+.card-text005 {
+  color: #0a0d14;
+  margin-left: 80px;
+  margin-top: 410px;
+  font-size: 15px;
+}
+
+.card-text006 {
+  color: #0a0d14;
+  margin-left: 390px;
+  margin-top: -30px;
+  font-size: 15px;
+}
+
+.card-text007 {
+  color: #0a0d14;
+  margin-left: 690px;
+  margin-top: -30px;
+  font-size: 15px;
+}
+
+.card-text008 {
+  color: #0a0d14;
+  margin-left: 990px;
+  margin-top: -30px;
+  font-size: 15px;
+}
+
+/* .japan-end */
+
+/* .journals-start */
+
+.journals01 {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0)),
+  url("https://s26162.pcdn.co/wp-content/uploads/2016/07/writing-pages.jpg");
+  background-size: cover;
+}
+
+.header09 {
+  margin-top: -250px;
+  margin-left: 550px;
+}
+
+.eight-page{
+  width: 100%;
+  height: 200vh;
+  margin-top: 203px;
+}
+/* .journals-end */
